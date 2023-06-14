@@ -7,6 +7,17 @@
 * {
     font-family: Atteron;
     color: #263A29;
+    margin: 0;
+}
+
+p{
+    line-height: 1.6;
+}
+a:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
 }
 
 .nav {
@@ -18,7 +29,6 @@
 
 .logo_img {
     width: 140px;
-    margin-left: -20px;
     margin-top: -20px;
 }
 
@@ -34,7 +44,6 @@
     color: #fff;
     font-size: 1.5rem;
 }
-
 
 .nav div.main_list {
     z-index: 99;
@@ -68,7 +77,9 @@
 .nav div.main_list ul li a:hover {
     color: #A4BC92;
 }
-
+.nav div.main_list ul li:nth-child(3){
+    margin-right: 25px;
+}
 
 
 
@@ -95,8 +106,10 @@
 }
 .bannerHeading h1{
     font-size: 4.5rem;
+    margin-bottom: 0;
 }
 .bannerPara p{
+    margin-top: 0;
     font-size: 28px;
     color: #41644A;
 }
@@ -139,7 +152,7 @@
 }
 .whoWeAreDiv h2{
     font-size: 2.9rem;
-    text-decoration: underline #AAC8A7;
+    /* text-decoration: underline #AAC8A7; */
 }
 .whoWeAreContainer{
     display: flex;
@@ -153,17 +166,112 @@
 .wwrText{
     width: 60%;
 }
+.wwrText button{
+    font-size: 18px;
+    text-decoration: none;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    background-color: #6d8659;
+    padding: 5px 10px;
+}
+.wwrText button:hover{
+    background-color: #7f956e;
+}
 .whoWeAreContainer img{
-    width: 100%;
+    width: 80%;
 }
 .whoWeAreContainer p{
     font-size: 20px;
 }
+.rightAlign{
+    text-align: right;
+}
 
 
+
+
+.contactDiv{
+    width: 90vw;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1535242208474-9a2793260ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80");
+}
+.contactBox{
+    width: 60%;
+    background-color: white;
+    padding: 20px 50px;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.contactDiv textarea{
+    height: 100px;
+    border-bottom: 1px #7f956e solid;
+}
+.contactDiv input{
+    height: 60px;
+    font-size: 15px;
+    border: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px #7f956e solid;
+}
+.contactDiv input:focus{
+    outline: none;
+}
+.contactDiv textarea:focus{
+    outline: none;
+}
+.contactDiv button{
+    border: 0;
+    margin-top: 10px;
+    color: white;
+    background-color: #6d8659;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.contactDiv button:hover{
+    background-color: #7f956e;
+}
+.contactDiv input, .contactDiv textarea{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+footer{
+    height: 60px;
+    width: 100vw;
+    background-color: #c3d3b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 !important;
+}
+footer p{
+    font-size: 18px;
+}
 
 
 @media(max-width: 769px){
+    .nav div.main_list ul li{
+        padding-right: 0;
+    }
+    .nav div.main_list ul li:nth-child(3){
+        margin-right: 15px;
+    }
+    .logo_img{
+        margin-left: -10px;
+    }
     .homeBannerContainer{
         flex-direction: column;
         align-items: center;
@@ -180,6 +288,9 @@
     .whoWeAreContainer{
         flex-direction: column;
     }
+    .whoWeAreContainer:nth-child(2){
+        flex-direction: column-reverse;
+    }
     .whoWeAreContainer p{
         text-align: center;
     }
@@ -188,5 +299,33 @@
     }
     .wwrText{
         width: 100%;
+    }
+    .whoWeAreContainer img{
+        width: 100%;
+    }
+    .whoWeAreContainer:nth-child(2) p{
+        text-align: center;
+    }
+    .wwrText button{
+        margin-top: 50px;
+    }
+}
+/* ------galaxy fold------- */
+@media(max-width:280px){
+    .nav div.main_list ul{
+        margin-right: 35px;
+        margin-top: -20px;
+    }
+    .bannerHeading h1{
+        font-size: 45px;
+    }
+    .bannerPara p{
+        font-size: 15px;
+    }
+    .secondBannerContainer h2, .whoWeAreDiv h2{
+        font-size: 25px;
+    }
+    .whoWeAreContainer p{
+        font-size: 13px;
     }
 }
