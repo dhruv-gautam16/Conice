@@ -173,7 +173,7 @@ button:hover{
     color: white;
     border-radius: 5px;
     background-color: #6d8659;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 .wwrText button:hover{
     background-color: #7f956e;
@@ -186,6 +186,9 @@ button:hover{
 }
 .rightAlign{
     text-align: right;
+}
+.wwrText button{
+margin-top: 50px;
 }
 
 
@@ -306,9 +309,7 @@ footer p{
     .whoWeAreContainer:nth-child(2) p{
         text-align: center;
     }
-    .wwrText button{
-        margin-top: 50px;
-    }
+    
 }
 /* ------galaxy fold------- */
 @media(max-width:280px){
@@ -328,4 +329,31 @@ footer p{
     .whoWeAreContainer p{
         font-size: 13px;
     }
+}
+
+
+
+.aboutContainer{
+    width: 90vw;
+    margin: 0 auto;
+}
+.lightGreen{
+    color: #c3d3b7;
+}
+.aboutHeading h1{
+    font-size: 3rem;
+}
+.aboutParaFirst{
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.lightGreen2{
+    color: #6d8659;
+}
+.featuresDiv{
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 100px;
 }
